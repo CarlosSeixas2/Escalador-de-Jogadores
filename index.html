@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Escala de Times</title>
+</head>
+<body>
+    <h1>Escalador de Time</h1>
+    <button onclick="escalamento()">Escalar Jogador</button>
+    <button onclick="remocao()">Remover Jogador</button>
+
+    <section class="hide-escalamento">
+            <div class="quest">
+                <label for="name">Nome do Jogador: </label>
+                <input type="text" id="name" name="name">
+                <label for="number">Numero do Jogador: </label>
+                <input type="number" id="number" name="number">
+                <label for="pos">Posição do Jogador: </label>
+                <input type="text" id="pos" name="pos">
+                <button type="submit" class="button-escala">Escalar</button>
+            </div>
+    </section>
+
+    <section class="hide-remocao">
+            <div class="quest">
+                <label for="num">Numero do Jogador: </label>
+                <input type="number" id="num" name="num">
+                <button type="submit" id="button-remocao">Remover</button>
+            </div>
+    </section>
+
+    <nav class="info-jogadores">
+        <h2>Area dos jogadores</h2>
+        <ul class="lista-jogadores">
+
+        </ul>
+    </nav>
+    <script src="./script.js"></script>
+</body>
+</html>
